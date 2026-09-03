@@ -5,12 +5,9 @@ The test environment is ROS2 Jazzy, Kafka or Redpanda connected (local or univer
 
 ## Content
 This repository currently includes the following packages:
-* scan_mask_filter
 * allocator
-* differential_drive_controller
-* ffw_swerve_drive_controller
-* stamped_filter
-* multiple_robots
+
+This task allocator repository needs the repository [multiple_robots](https://github.com/IdPDE/multiple-robots.git)
 
 ## Installation instructions & dependencies
 
@@ -22,6 +19,7 @@ git clone https://github.com/IdPDE/...
 Make sure that the following are properly installed in the ROS2 environment: 
 * Virtual environment (venv), inside the venv the following python packages need to be installed: Kafka, numpy and yaml
 * Outside the ROS2 environment kafka_2.13-4.2.0 needs to be installed, this is needed to create publishers to the task allocator or to use a local server
+* multiple-robots repository
 
 ## Execution of the project
 The folder multiple_robots-Jazzy should be added to a folder which also contains a kafka installation after which the instructions below can be followed to launch the multiple robot environment and the task allocator.
